@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny Nguyen Resume</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Sansita+Swashed:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='ResumeTakeTwo.css'>
+    <script src="https://kit.fontawesome.com/e9d9c506c6.js" crossorigin="anonymous"></script>
+    <script src="ResumeTakeTwo.js"></script>
+</head>
+
+<body>
+    <div class='w3-panel w3-grey w3-card-4 w3-center topBar'>
+        <h1>Danny Nguyen</h1>
+    </div>
+    <div class='w3-cell-row navBar'>
+        <div class='w3-card-4 w3-display-container w3-cell w3-center navCard w3-round w3-animate-opacity' id='aboutButton'
+            onclick="getInfo('about','aboutButton' )">
+            <h2>About</h2>
+            <i class="fas fa-user-tie fa-3x"></i>
+            <div class='corner w3-display-bottomright'></div>
+        </div>
+        <div class='w3-card-4 w3-cell w3-center navCard w3-round w3-animate-opacity' id='skillsButton'
+            onclick="getInfo('skills', 'skillsButton')">
+            <h2>Skills</h2>
+            <i class="fas fa-hand-sparkles fa-3x"></i>
+        </div>
+        <div class='w3-card-4 w3-cell w3-center navCard w3-round w3-animate-opacity' id='historyButton'
+            onclick="getInfo('history', 'historyButton')">
+            <h2>History</h2>
+            <i class="far fa-building fa-3x"></i>
+        </div>
+        <div class='w3-card-4 w3-cell w3-center navCard w3-round w3-animate-opacity' id='contactButton'
+            onclick="getInfo('contact', 'contactButton')">
+            <h2>Contact</h2>
+            <i class="far fa-address-card fa-3x"></i>
+        </div>
+        <div class='w3-card-4 w3-cell w3-center navCard w3-round w3-hide w3-animate-opacity' id='backButton' onclick="hideInfo()">
+            <h2>Back</h2>
+            <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+        </div>
+    </div>
+    <div class="w3-card-4 info w3-center w3-hide w3-grey w3-animate-opacity" id='about'>
+        <header class="w3-container w3-blue">
+            <h1>
+                <i class="fas fa-user-tie"></i>
+                About
+                <i class="fas fa-user-tie"></i>
+            </h1>
+        </header>
+        <div class="w3-container">
+            <p>Throughout my career, I have contributed to positive business results through effective organization,
+                prioritization, and
+                follow through of key organizational projects. My strengths and qualifications are an ideal match
+                for
+                the job and will bring immediate value to your company.
+            </p>
+            <p>In my former Server and Box Office Assistant role, I exercise a calculated and methodical approach to
+                problem solving.
+                While I am independently motivated, I appreciate collective efforts and collaborate productively
+                within
+                group settings.
+                Further, my customer service, communication, and critical thinking abilities will serve to support
+                your
+                continued organizational efforts.
+                To illustrate the scope of my career history and professional competencies, please take a moment to
+                review my
+                enclosed resume. I am grateful for your evaluation of my credentials and subsequent response.
+            </p>
+        </div>
+        <footer class="w3-container w3-blue">
+            <br>
+        </footer>
+    </div>
+    <div class="w3-card-4 w3-center info w3-hide w3-grey w3-animate-opacity" id='skills'>
+        <header class="w3-container w3-blue">
+            <h1>
+                <i class="fas fa-hand-sparkles"></i>
+                Skills
+                <i class="fas fa-hand-sparkles"></i>
+            </h1>
+        </header>
+        <div class="w3-container">
+            <ul>
+                <li>Greeting and seating guests</li>
+                <li>POS inventory system operation</li>
+                <li>Hospitality service expertise</li>
+                <li>Security awareness</li>
+                <li>Payment processing</li>
+                <li>Time management</li>
+                <li>Quality assurance</li>
+                <li>Customer service</li>
+            </ul>
+        </div>
+        <footer class="w3-container w3-blue">
+            <br>
+        </footer>
+    </div>
+    <div class="w3-card-4 w3-center info w3-hide w3-grey w3-animate-opacity" id='history'>
+        <header class="w3-container w3-blue">
+            <h1>
+                <i class="far fa-building"></i>
+                History
+                <i class="far fa-building"></i>
+            </h1>
+        </header>
+        <div class="w3-container w3-left-align">
+            <ul id='historyList'>
+                <div class='date'>
+                    <h3>Jubilations Dinner Theatre</h3>
+                    <h3>2013 to Current</h3>
+                </div>
+                <li>Calgary, AB</li>
+                <li>Character Server/Box Office Assistant</li>
+                <li>
+                    <ul class='fa-ul'>
+                        <li><span class='fa-li'></span><i class="fas fa-glass-cheers"></i>Sold admission, processed
+                            payments and issued tickets</li>
+                        <li><span class='fa-li'></span><i class="fas fa-glass-cheers"></i>Applied communication and
+                            problem-solving skills to resolve customer complaints and
+                            promote
+                            long-term loyalty</li>
+                        <li><span class='fa-li'></span><i class="fas fa-glass-cheers"></i>Guided arriving guests to
+                            tables, took drink orders and relayed information to
+                            bartenders
+                        </li>
+                        <li><span class='fa-li'></span><i class="fas fa-glass-cheers"></i>Applied comprehensive
+                            knowledge of wine, cider and beer as well as appropriate entree
+                            pairings
+                        </li>
+                    </ul>
+                </li>
+                <hr>
+                <div class='date'>
+                    <h3>Cash Casino</h3>
+                    <h3>October 2012 to June 2013</h3>
+                </div>
+                <li>Calgary, AB</li>
+                <li>Busser/Porter</li>
+                <li>
+                    <ul class='fa-ul'>
+                        <li><span class='fa-li'></span><i class="fas fa-dice"></i>Comminucated with staff to ensure
+                            optimal efficiency of product delivery</li>
+                        <li><span class='fa-li'></span><i class="fas fa-dice"></i>Checked dining area supplies,
+                            including linens and wrapped silverware, and replenished
+                            low
+                            stock
+                        </li>
+                        <li><span class='fa-li'></span><i class="fas fa-dice"></i>Developed excellent
+                            relationships with managers and fellow team members to support a
+                            positive
+                            work environment</li>
+                    </ul>
+                </li>
+                <hr>
+                <div class='date'>
+                    <h3>Chat-R Wireless</h3>
+                    <h3>October 2011 to April 2012</h3>
+                </div>
+                <li>Calgary, AB</li>
+                <li>Sales Associate</li>
+                <li>
+                    <ul class='fa-ul'>
+                        <li><span class='fa-li'></span><i class="fas fa-mobile-alt"></i>Trained and developed new sales
+                            team associates in products, selling techniques and
+                            company
+                            procedures.</li>
+                        <li><span class='fa-li'></span><i class="fas fa-mobile-alt"></i>Organized racks and shelves to
+                            maintain store visual appeal, engage customers and
+                            promote
+                            specific merchandise.</li>
+                        <li><span class='fa-li'></span><i class="fas fa-mobile-alt"></i>Implemented up-selling
+                            strategies such as recommending accessories and complementary
+                            purchases
+                            to boost revenue.</li>
+                    </ul>
+            </ul>
+        </div>
+        <footer class="w3-container w3-blue">
+            <br>
+        </footer>
+    </div>
+    <div class="w3-card-4 w3-center info w3-hide w3-grey w3-animate-opacity" id='contact'>
+        <header class="w3-container w3-blue">
+            <h1>
+                <i class="far fa-address-card"></i>
+                Contact
+                <i class="far fa-address-card"></i>
+            </h1>
+        </header>
+        <div class="w3-container">
+            <p>
+                <i class="fas fa-phone-square"></i>
+                587-894-8253
+            </p>
+            <a href='mailto:dannynguyen@hotmail.ca'>
+                <i class="far fa-paper-plane"></i>
+                dannynguyen@hotmail.ca
+            </a>
+        </div>
+        <footer class="w3-container w3-blue">
+            <br>
+        </footer>
+    </div>
+</body>
+
+</html>
