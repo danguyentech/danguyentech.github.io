@@ -19,3 +19,4 @@ function hideInfo() {
   }
   document.getElementById('backButton').className = document.getElementById('backButton').className.replace(" w3-show", "");
 }
+
