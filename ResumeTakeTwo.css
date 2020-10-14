@@ -4,7 +4,9 @@ body{
 }
 .navBar{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-top:15vh;
 }
 .navCard{
     background-color:#B6A9F0;
@@ -106,4 +108,10 @@ i{
 }
 h1, h2, h3, i{
     color:#2E0819;
+}
+@media (max-width:799px){
+    .navBar{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
 }
