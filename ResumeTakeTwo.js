@@ -18,7 +18,7 @@ function hideInfo() {
   document.getElementById('backButton').className = document.getElementById('backButton').className.replace(" w3-show", "");
 }
 function hoverStart(button){
-  document.getElementById(button).style.backgroundColor='#FBA90A'
+  document.getElementById(button).style.backgroundColor='#FBA90A';
 }
 function hoverEnd(button){
   document.getElementById(button).style.backgroundColor='#B6A9F0';
