@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny Nguyen</title>
+    <link rel='stylesheet' href='ResumeTakeTwo.css'>
+    <link rel='stylesheet' href='w3.css'>
+    <script src="https://kit.fontawesome.com/e9d9c506c6.js" crossorigin="anonymous"></script>
+    <script src="ResumeTakeTwo.js"></script>
+</head>
+
+<body>
+    <div class='w3-panel w3-card-4 w3-center topBar w3-theme-d5'>
+        <h1>Danny Nguyen</h1>
+    </div>
+    <div class='navBar'>
+        <div class='w3-card-4 w3-center navCard w3-round' id='aboutButton' onclick="getInfo('about')"
+            onmouseenter="hoverStart('aboutButton')" onmouseleave="hoverEnd('aboutButton')">
+            <h2>About</h2>
+            <i class="fas fa-user-tie fa-3x"></i>
+            <div class='corner w3-display-bottomright'></div>
+        </div>
+        <div class='w3-card-4 w3-center navCard w3-round ' id='skillsButton' onclick="getInfo('skills')"
+            onmouseenter="hoverStart('skillsButton')" onmouseleave="hoverEnd('skillsButton')">
+            <h2>Skills</h2>
+            <i class="fas fa-hand-sparkles fa-3x"></i>
+        </div>
+        <div class='w3-card-4 w3-center navCard w3-round' id='historyButton' onclick="getInfo('projects')"
+            onmouseenter="hoverStart('historyButton')" onmouseleave="hoverEnd('historyButton')">
+            <h2>Projects</h2>
+            <i class="far fa-building fa-3x"></i>
+        </div>
+        <div class='w3-card-4 w3-center navCard w3-round' id='contactButton' onclick="getInfo('contact')"
+            onmouseenter="hoverStart('contactButton')" onmouseleave="hoverEnd('contactButton')">
+            <h2>Contact</h2>
+            <i class="far fa-address-card fa-3x"></i>
+        </div>
+    </div>
+    <div class="w3-card-4 info w3-center w3-hide" id='about'>
+        <header class="w3-container">
+            <h1>
+                <i class="fas fa-user-tie"></i>
+                About
+                <i class="fas fa-user-tie"></i>
+            </h1>
+        </header>
+        <div class="w3-container">
+            <p>I am a Customer service representative with 10+ years of experience with a passion for technology and
+                finance, looking for a new career. I am excellent at performing tasks with accuracy, promptness, and
+                with minimal supervision. I am also a strong leader with exceptional interpersonal skills, committed to
+                continuous growth and learning.
+                Throughout my career, I have contributed to impacting business outcomes through effective organization,
+                prioritization, and execution of key projects. My skills and qualifications are an ideal match for your
+                company and will bring you immediate value.
+            </p>
+        </div>
+    </div>
+    <div class="w3-card-4 w3-center info w3-hide" id='skills'>
+        <header class="w3-container">
+            <h1>
+                <i class="fas fa-hand-sparkles"></i>
+                Skills
+                <i class="fas fa-hand-sparkles"></i>
+            </h1>
+        </header>
+        <div class="w3-container w3-ul">
+            <ul>
+                <li><i class="fab fa-html5 fa-2x"></i>HTML</li>
+                <li><i class="fab fa-css3 fa-2x"></i>CSS</li>
+                <li><i class="fab fa-js fa-2x"></i>Javascript</li>
+                <li><i class="fab fa-node-js fa-2x"></i>Node.js</li>
+                <li><i class="fab fa-react fa-2x"></i>React.js</li>
+                <li><i class="fas fa-database fa-2x"></i>MongoDB</li>
+                <li><i class="fab fa-js fa-2x"></i>Express</li>
+            </ul>
+        </div>
+    </div>
+    <div class="w3-card-4 w3-center info w3-hide" id='projects'>
+        <header class="w3-container">
+            <h1>
+                <i class="far fa-building"></i>
+                Projects
+                <i class="far fa-building"></i>
+            </h1>
+        </header>
+    </div>
+    <div class='cardBar w3-hide'>
+        <div class='w3-card-4 w3-center projectCard w3-round' id='mentalButton' onclick="getInfo('mental')"
+            onmouseenter="hoverStart('mentalButton')" onmouseleave="hoverEnd('mentalButton')">
+            <h2>Mental Health YYC</h2>
+            <i class="fas fa-brain fa-3x"></i>
+            <div class='corner w3-display-bottomright'></div>
+        </div>
+        <div class='w3-card-4 w3-center projectCard w3-round' id='fusionButton' onclick="getInfo('fusion')"
+            onmouseenter="hoverStart('fusionButton')" onmouseleave="hoverEnd('fusionButton')">
+            <h2>Fusion Alberta</h2>
+            <i class="fab fa-react fa-3x"></i>
+            <div class='corner w3-display-bottomright'></div>
+        </div>
+        <div class='w3-card-4 w3-center projectCard w3-round' id='inspireButton' onclick="getInfo('inspire')"
+            onmouseenter="hoverStart('inspireButton')" onmouseleave="hoverEnd('inspireButton')">
+            <h2>Inspirobot</h2>
+            <i class="fab fa-discord fa-3x"></i>
+            <div class='corner w3-display-bottomright'></div>
+        </div>
+        <div class='w3-card-4 w3-center projectCard w3-round' id='HoHButton' onclick="getInfo('HoH')"
+            onmouseenter="hoverStart('HoHButton')" onmouseleave="hoverEnd('HoHButton')">
+            <h2>Handful of Hazards</h2>
+            <i class="fas fa-dice fa-3x"></i>
+            <div class='corner w3-display-bottomright'></div>
+        </div>
+    </div>
+    <div class="w3-card-4 w3-center info w3-hide" id='contact'>
+        <header class="w3-container">
+            <h1>
+                <i class="far fa-address-card"></i>
+                Contact
+                <i class="far fa-address-card"></i>
+            </h1>
+        </header>
+        <div class="w3-container">
+            <a href='https://www.linkedin.com/in/danny-nguyen-b8306b3a/'>
+                <i class="fab fa-linkedin"></i>
+                Linkedin
+            </p>
+            <a href='https://github.com/danguyentech'>
+                <i class="fab fa-github"></i>
+                Github
+            </a>
+        </div>
+        <footer class="w3-container">
+            <br>
+        </footer>
+    </div>
+    <div class="w3-card-4 info projectInfo w3-center w3-hide" id='mental'>
+        <header class="w3-container">
+            <h1>
+                <i class="fas fa-brain"></i>
+                MentalHealthYYC
+                <i class="fas fa-brain"></i>
+            </h1>
+        </header>
+        <div class="w3-container">
+            <p>My first group project. Users could look through a curated list of mental health resources, do a quick
+                survey to get a recommendation, and connect with a volunteer directly to talk. In the end, it didn't
+                launch, but there are many things I got to learn from this.</p>
+        </div>
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src='/img/MentalHealthYYC/iridium_mT8Z4uD6Hm.png' class='w3-image'>
+                    <div class="w3-container">
+                        <h4>Landing Page</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src='/img/MentalHealthYYC/iridium_ImQOBgZT59.png' class='w3-image'>
+                    <div class="w3-container">
+                        <h4>Resources Page</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src='/img/MentalHealthYYC/iridium_vURo1kVvX1.png' class='w3-image'>
+                    <div class="w3-container">
+                        <h4>Survey</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-row-padding w3-margin-top secondRow">
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src='/img/MentalHealthYYC/iridium_X4krhrNCpV.png' class='w3-image'>
+                    <div class="w3-container">
+                        <h4>Survey Recommendation</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src='/img/MentalHealthYYC/iridium_l41Z8Ngqg8.png' class='w3-image'>
+                    <div class="w3-container">
+                        <h4>Chat Client</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w3-card-4 info projectInfo w3-center w3-hide" id='fusion'>
+        <header class="w3-container">
+            <h1>
+                <i class="fab fa-react"></i>
+                Fusion Alberta
+                <i class="fab fa-react"></i>
+            </h1>
+        </header>
+        <div class="w3-container">
+            <p>My capstone project. Users could peruse a curated list of networking events through a carousel, view
+                events on a calendar, and there is an admin console that lets the admin add, edit, and remove events. I
+                worked on the carousel and the calendar.</p>
+        </div>
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src='/img/fusion/iridium_bHeBowHE2y.png' class='w3-image'>
+                    <div class="w3-container">
+                        <h4>Landing Page</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src='/img/fusion/iridium_EP09LjPgJO.png' class='w3-image'>
+                    <div class="w3-container">
+                        <h4>Pagination of Events</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src='/img/fusion/iridium_3tGiNjY1OP.png' class='w3-image'>
+                    <div class="w3-container">
+                        <h4>Calendar View of Events</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w3-card-4 info projectInfo w3-center w3-hide" id='inspire'>
+        <header class="w3-container">
+            <h1>
+                <i class="fab fa-discord"></i>
+                Inspirobot
+                <i class="fab fa-discord"></i>
+            </h1>
+        </header>
+        <div class="w3-container">
+            <p>My first project outside of EvolveU. A Discord bot that sends you random quotes, and sends you a nice
+                message if you use certian sad words. I also included a way to add and remove message, as well as a
+                fully documented help section.</p>
+        </div>
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-quarter">
+                <div class="w3-card">
+                    <img src='/img/InspiroBot/Discord_78rj4BeMrT.png' class='w3-image'>
+                    <div class="w3-container">
+                        <h4>Random Quote Generator</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-quarter">
+                <div class="w3-card">
+                    <img src='/img/InspiroBot/Discord_tU9jTwzwgY.png' class='w3-image'>
+                    <div class="w3-container">
+                        <h4>Bot Response to Sad Messages</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-quarter">
+                <div class="w3-card">
+                    <img src='/img/InspiroBot/Discord_Hbwa2rTND0.png' class='w3-image'>
+                    <div class="w3-container">
+                        <h4>Adding New Messages</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-quarter">
+                <div class="w3-card">
+                    <img src='/img/InspiroBot/Discord_rE9b61BArm.png' class='w3-image'>
+                    <div class="w3-container">
+                        <h4>Help Section</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w3-card-4 info projectInfo w3-center w3-hide" id='HoH'>
+        <header class="w3-container">
+            <h1>
+                <i class="fas fa-dice"></i>
+                Handful of Hazards
+                <i class="fas fa-dice"></i>
+            </h1>
+        </header>
+        <div class="w3-container">
+            <p>An adaptation of a solitaire PnP game from the 2020 PnP competition. A game where you roll dice and
+                attempt to fill the right spaces before you run out of time.</p>
+        </div>
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src='/img/Handful of Hazards/iridium_mXDO9qikWx.png' class='w3-image'>
+                    <div class="w3-container">
+                        <h4>Full View</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src='/img/Handful of Hazards/iridium_3sxgCgBeuy.png' class='w3-image'>
+                    <div class="w3-container">
+                        <h4>Dice Section</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src='/img/Handful of Hazards/DGY130NE0c.png' class='w3-image'>
+                    <div class="w3-container">
+                        <h4>Score Section</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='w3-card-4 w3-center navCard w3-round w3-hide' id='backButton' onclick="hideInfo()"
+        onmouseenter="hoverStart('backButton')" onmouseleave="hoverEnd('backButton')">
+        <h2>Back</h2>
+        <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+    </div>
+</body>
+
+</html>
