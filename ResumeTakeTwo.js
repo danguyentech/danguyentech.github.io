@@ -58,3 +58,16 @@ function hoverStart(button) {
 function hoverEnd(button) {
   document.getElementById(button).style.backgroundColor = '#ededff';
 }
+
+function getPic(pic, caption){
+  console.log(pic)
+  document.getElementById('picture').setAttribute('src', pic)
+  document.getElementById('caption').innerHTML=caption
+  document.getElementById('picModal').style.display='block'
+}
+
+window.onclick = function(event) {
+  if (event.target == document.getElementById('picModal')) {
+    document.getElementById('picModal').style.display = "none";
+  }
+}

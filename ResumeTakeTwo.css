@@ -132,3 +132,13 @@ i{
     flex-direction: row;
     justify-content: space-between;
 }
+#picModal{
+    background-color: rgba(0,0,0,0.9);
+}
+#picModal img{
+    display: block;
+}
+#caption{
+    text-align: center;
+    color: white;
+}
